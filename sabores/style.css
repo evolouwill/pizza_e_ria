@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  /* palheta de cor escolhida pelo cliente */
+  --branco: #eee;
+  --branco2: #eeeee0;
+  --preto: #03071e;
+  --laranja1: #dc2f02;
+  --vinho: #370617;
+  --bordo: #6a040f;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--preto);
+  background: var(--branco2);
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 3%;
+  background: var(--laranja1);
+  color: var(--branco);
+}
+.sabores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.sabor {
+  background: var(--branco);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px var(--preto) solid;
+  border-radius: 15px;
+  padding: 10px 15px 10px 10px;
+}
+section:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 65%;
+  padding: 0 auto;
+}
+section:nth-of-type(2) {
+  background: #FFF;
+  width: 30%;
+  height: 545px;
+  padding: 15px 30px 15px 15px;
+  border-radius: 0 0 0 20px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.divPreco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px #aaa solid;
+}
+.divPreco > button {
+  background: #2e2efc;
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+.divPreco > button:hover {
+  background: #5e5ef8;
+  transform: scale(1.1);
+}
+.divCompra {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+a {
+  color: var(--branco);
+  text-decoration: none;
+}

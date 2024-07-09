@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  /* palheta de cor escolhida pelo cliente */
+  --branco: #eee;
+  --branco2: #cdcdcd;
+  --preto: #03071e;
+  --laranja1: #dc2f02;
+  --vinho: #370617;
+  --bordo: #6a040f;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--preto);
+  background: var(--branco);
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 3%;
+  background: var(--laranja1);
+  color: var(--branco);
+}
+.imagem_inicial {
+  background: linear-gradient(rgba(3, 7, 30, 0) 30%, rgba(3, 7, 30, 1) 100%),
+    url("img/receitas-com-calabresa-1.png");
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 3%;
+  color: var(--branco);
+  margin-bottom: 10%;
+}
+.imagem_inicial > div {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+}
+.imagem_inicial > div > h2 {
+  font-size: 60px;
+  font-style: unset;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
+.imagem_inicial > div > p {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.pizzas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.opcoes_tamanhos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.promocao,
+.tamanho {
+  background: var(--branco2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-shadow: var(--branco2) 1px 3px 10px;
+}
+
+.promocao {
+  cursor:pointer;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.promocao:hover {
+  animation: escala 1s ease-in-out both;
+}
+.promocao > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.promocao > div {
+  width: 70%;
+  font-size: 10px;
+}
+
+.tamanho {
+  width: 350px;
+  height: 150px;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.tamanho:hover {
+  animation: escala 1s ease-in-out both;
+}
+@keyframes escala {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.pizza_img,
+.pizza_img_promo {
+  width: 100%;
+}
+.pizza_img_promo {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.pizza_img {
+  height: 150px;
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+}
+#opcoes_tamanhos {
+  width: 40%;
+}
+#opcao_sem_desconto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+}
+.tamanho > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    flex-direction: column;
+}
+.tamanho > div > p {
+    font-size: 10px;
+}
+.tamanho > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+a {
+  color: var(--branco);
+}
